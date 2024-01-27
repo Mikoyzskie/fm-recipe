@@ -1,112 +1,78 @@
 import Image from "next/image";
+import { serif } from "@/app/font"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-white p-10 rounded-3xl  flex flex-col">
+      <Image
+        src={"/image-omelette.jpeg"}
+        alt="Omelette"
+        height={300}
+        width={656}
+        className="rounded-xl mb-10"
+      />
+      <div className="max-w-[656px] w-full flex flex-col gap-8">
+        <div className="text-[#5F564D]">
+          <h1 className={`${serif.className} text-[40px] mb-6 text-[#312E2C]`}>Simple Omelette Recipe</h1>
+          <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className="bg-[#FFF7FB] p-7 flex flex-col gap-4">
+          <p className="text-[#7A284E] text-xl font-bold rounded-xl">Preparation Time</p>
+          <ul className="prep list-disc list-inside flex flex-col gap-2">
+            <li className="text-[#5F564D]"><span className="font-bold pl-4">Total:</span> Approximately 10 minutes</li>
+            <li className="text-[#5F564D]"><span className="font-bold pl-4">Preparation:</span> 5 minutes</li>
+            <li className="text-[#5F564D]"><span className="font-bold pl-4">Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-6">
+          <h2 className={`${serif.className} text-[#854632] text-[28px] `}>Ingredients</h2>
+          <div className="ml-[17px]">
+            <ul className="ing list-disc flex flex-col gap-2 text-[#5F564D]">
+              <li className="pl-4">2-3 large eggs</li>
+              <li className="pl-4">Salt, to taste</li>
+              <li className="pl-4">Pepper, to taste</li>
+              <li className="pl-4">1 tablespoon of butter or oil</li>
+              <li className="pl-4">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+            </ul>
+          </div>
+        </div>
+        <div className="h-[1px] w-full bg-[#E3DDD7]"></div>
+        <div className="flex flex-col gap-6">
+          <h2 className={`${serif.className} text-[#854632] text-[28px] `}>Instructions</h2>
+          <div className="ml-[17px]">
+            <ol className="ing list-decimal flex flex-col gap-2 ">
+              <li className="text-[#5F564D]">
+                <p className="pl-4"><span className="font-bold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</p>
+              </li>
+              <li className="text-[#5F564D]">
+                <p className="pl-4"><span className="font-bold">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</p>
+              </li>
+              <li className="text-[#5F564D]">
+                <p className="pl-4"><span className="font-bold">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</p>
+              </li>
+              <li className="text-[#5F564D]">
+                <p className="pl-4"><span className="font-bold">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</p>
+              </li>
+              <li className="text-[#5F564D]">
+                <p className="pl-4"><span className="font-bold">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</p>
+              </li>
+              <li className="text-[#5F564D]"><span className="pl-4 font-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+            </ol>
+          </div>
+        </div>
+        <div className="h-[1px] w-full bg-[#E3DDD7]"></div>
+        <div className="flex flex-col gap-6 text-[#5F564D]">
+          <h2 className={`${serif.className} text-[#854632] text-[28px] `}>Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <table>
+            <tbody>
+              <tr className="border-b border-[#E3DDD7] pb-3">
+                <td>Calories</td>
+                <td>277kcal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </main>
   );
