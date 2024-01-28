@@ -3,22 +3,22 @@ import { serif } from "@/app/font"
 
 export default function Home() {
   return (
-    <main className="bg-white p-10 rounded-3xl  flex flex-col">
+    <main className="bg-white md:rounded-3xl md:w-auto w-full flex flex-col md:mt-[123px] md:mb-[124px]">
       <Image
         src={"/image-omelette.jpeg"}
         alt="Omelette"
         height={300}
         width={656}
-        className="rounded-xl mb-10"
+        className="md:rounded-xl mb-10 md:max-w-[656px] w-full md:pt-10 md:px-10"
       />
-      <div className="max-w-[656px] w-full flex flex-col gap-8">
+      <div className="md:max-w-[656px] w-full flex flex-col gap-8 md:px-10 px-8 md:pb-10 pb-8">
         <div className="text-[#5F564D]">
-          <h1 className={`${serif.className} text-[40px] mb-6 text-[#312E2C]`}>Simple Omelette Recipe</h1>
+          <h1 className={`${serif.className} md:text-[40px] text-4xl mb-6 text-[#312E2C]`}>Simple Omelette Recipe</h1>
           <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
         </div>
         <div className="bg-[#FFF7FB] p-7 flex flex-col gap-4">
           <p className="text-[#7A284E] text-xl font-bold rounded-xl">Preparation Time</p>
-          <ul className="prep list-disc list-inside flex flex-col gap-2">
+          <ul className="prep list-disc flex flex-col gap-2">
             <li className="text-[#5F564D]"><span className="font-bold pl-4">Total:</span> Approximately 10 minutes</li>
             <li className="text-[#5F564D]"><span className="font-bold pl-4">Preparation:</span> 5 minutes</li>
             <li className="text-[#5F564D]"><span className="font-bold pl-4">Cooking:</span> 5 minutes</li>
@@ -32,7 +32,7 @@ export default function Home() {
               <li className="pl-4">Salt, to taste</li>
               <li className="pl-4">Pepper, to taste</li>
               <li className="pl-4">1 tablespoon of butter or oil</li>
-              <li className="pl-4">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+              <li className="pl-4 align-middle">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
             </ul>
           </div>
         </div>
@@ -56,7 +56,9 @@ export default function Home() {
               <li className="text-[#5F564D]">
                 <p className="pl-4"><span className="font-bold">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</p>
               </li>
-              <li className="text-[#5F564D]"><span className="pl-4 font-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+              <li className="text-[#5F564D]">
+                <p className="pl-4"><span className="font-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</p>
+              </li>
             </ol>
           </div>
         </div>
@@ -65,10 +67,22 @@ export default function Home() {
           <h2 className={`${serif.className} text-[#854632] text-[28px] `}>Nutrition</h2>
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
           <table>
-            <tbody>
-              <tr className="border-b border-[#E3DDD7] pb-3">
-                <td>Calories</td>
-                <td>277kcal</td>
+            <tbody className="">
+              <tr className="border-b border-[#E3DDD7]">
+                <td className="pb-3 pl-8">Calories</td>
+                <td className="pb-3 text-[#854632] font-bold">277kcal</td>
+              </tr>
+              <tr className="border-b border-[#E3DDD7]">
+                <td className="py-3 pl-8">Carbs</td>
+                <td className="pb-3 text-[#854632] font-bold">0g</td>
+              </tr>
+              <tr className="border-b border-[#E3DDD7] ">
+                <td className="py-3 pl-8">Protein</td>
+                <td className="pb-3 text-[#854632] font-bold">20g</td>
+              </tr>
+              <tr className="border-b border-[#E3DDD7] ">
+                <td className="py-3 pl-8">Fat</td>
+                <td className="pb-3 text-[#854632] font-bold">22g</td>
               </tr>
             </tbody>
           </table>
