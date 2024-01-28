@@ -4,13 +4,15 @@ import { serif } from "@/app/font"
 export default function Home() {
   return (
     <main className="bg-white md:rounded-3xl md:w-auto w-full flex flex-col md:mt-[123px] md:mb-[124px]">
-      <Image
-        src={"/image-omelette.jpeg"}
-        alt="Omelette"
-        height={300}
-        width={656}
-        className="md:rounded-xl mb-10 md:max-w-[656px] w-full md:mt-10 md:mx-10"
-      />
+      <div className="md:pt-10 md:px-10 max-w-[656px]">
+        <Image
+          src={"/image-omelette.jpeg"}
+          alt="Omelette"
+          height={300}
+          width={656}
+          className="md:rounded-xl mb-10 "
+        />
+      </div>
       <div className="md:max-w-[656px] w-full flex flex-col gap-8 md:px-10 px-8 md:pb-10 pb-8">
         <div className="text-[#5F564D]">
           <h1 className={`${serif.className} md:text-[40px] text-4xl mb-6 text-[#312E2C]`}>Simple Omelette Recipe</h1>
