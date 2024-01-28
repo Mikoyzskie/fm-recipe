@@ -9,7 +9,7 @@ export default function Home() {
         alt="Omelette"
         height={300}
         width={656}
-        className="md:rounded-xl mb-10 md:max-w-[656px] w-full md:pt-10 md:px-10"
+        className="md:rounded-xl mb-10 md:max-w-[656px] w-full md:mt-10 md:mx-10"
       />
       <div className="md:max-w-[656px] w-full flex flex-col gap-8 md:px-10 px-8 md:pb-10 pb-8">
         <div className="text-[#5F564D]">
